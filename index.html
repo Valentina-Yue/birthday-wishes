@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>生日快乐 - 66 顺顺顺</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Serif+SC:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 炮仗花背景装饰层 -->
+    <div class="flower-bg" id="flowerBg"></div>
+    
+    <!-- 飘落花瓣效果容器 -->
+    <div class="petal-container" id="petalContainer"></div>
+    
+    <!-- 主内容区域 -->
+    <div class="container">
+        <!-- 贺卡主体 -->
+        <div class="birthday-card">
+            <!-- 标题区域 -->
+            <div class="title-section">
+                <h1 class="birthday-title">
+                    <span class="chinese">🎂 生日快乐 🎂</span>
+                </h1>
+                <div class="subtitle">Happy Birthday</div>
+            </div>
+            
+            <!-- 祝福文字区域 -->
+            <div class="message-section">
+                <div class="greeting">
+                    <p class="line">To 亲爱的静宝宝：</p>
+                    <p class="line">愿你身体健康，</p>
+                    <p class="line">愿你开心如意，</p>
+                    <p class="line">愿你如炮仗花般热情绽放，</p>
+                    <p class="line">每一天都灿烂如花！</p>
+                </div>
+            </div>
+            
+            <!-- 署名区域 -->
+            <div class="signature">
+                <p>—— Sei glücklich！</p>
+                <p class="date" id="currentDate"></p>
+            </div>
+            
+            <!-- 烟花/庆祝按钮 -->
+            <div class="celebration">
+                <button class="firework-btn" id="fireworkBtn">
+                    ✨ 点燃祝福 ✨
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 音乐控制（可选，静音自动播放需要用户交互） -->
+    <div class="music-control" id="musicControl" style="display: none;">
+        <button id="musicToggle">🔊 播放音乐</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
