@@ -40,6 +40,24 @@ body {
 }
 */
 
+/* 炮仗花背景图 */
+.flower-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('paozhanghua.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* 固定背景，滚动时不移动 */
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.35; /* 透明度，让文字更清晰，可以调整 */
+}
+
+
 /* 方案2：纯CSS绘制炮仗花图案 - 艺术感更强 */
 .flower-bg {
     position: fixed;
@@ -52,6 +70,7 @@ body {
 }
 
 /* 绘制炮仗花 - 使用CSS渐变和形状 */
+/* 
 .flower-bg::before {
     content: '';
     position: absolute;
@@ -59,6 +78,7 @@ body {
     height: 100%;
     background: 
         /* 炮仗花的橙色簇状效果 */
+        /* 
         radial-gradient(circle at 10% 20%, rgba(255, 100, 50, 0.15) 0%, transparent 30%),
         radial-gradient(circle at 85% 45%, rgba(255, 80, 30, 0.2) 0%, transparent 35%),
         radial-gradient(circle at 20% 70%, rgba(255, 120, 60, 0.12) 0%, transparent 28%),
@@ -66,7 +86,9 @@ body {
         radial-gradient(circle at 45% 15%, rgba(255, 110, 55, 0.14) 0%, transparent 25%),
         radial-gradient(circle at 95% 75%, rgba(255, 70, 25, 0.16) 0%, transparent 30%),
         radial-gradient(circle at 5% 55%, rgba(255, 130, 70, 0.1) 0%, transparent 22%),
+        */
         /* 藤蔓效果 */
+        /* 
         repeating-linear-gradient(45deg, 
             rgba(60, 40, 20, 0.08) 0px, 
             rgba(60, 40, 20, 0.08) 2px,
@@ -74,6 +96,7 @@ body {
             transparent 8px);
     opacity: 0.6;
 }
+*/
 
 /* 动态飘落花瓣 - 炮仗花花瓣效果 */
 .petal-container {
@@ -190,6 +213,20 @@ body {
     letter-spacing: 2px;
 }
 
+/* 正文图片 - 这里放你的图片作为装饰 */
+.inline-flower {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inline-flower-img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ff8c42;
+}
+
 /* 祝福文字 */
 .message-section {
     margin: 30px 0;
@@ -274,35 +311,23 @@ body {
     .birthday-card {
         padding: 25px 20px;
     }
-    
     .birthday-title {
         font-size: 1.8rem;
     }
-    
     .greeting .line {
         font-size: 1rem;
         line-height: 1.8;
     }
-    
     .subtitle {
         font-size: 1rem;
     }
+    .inline-flower-img {
+        max-width: 95%;
+    }
 }
 
-/* 烟花效果容器 */
 .firework {
     position: fixed;
     pointer-events: none;
     z-index: 100;
-}
-
-/* 添加炮仗花装饰元素 */
-.flower-decoration {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background: radial-gradient(circle, #ff6b35, #ff4500);
-    border-radius: 0 50% 0 50%;
-    opacity: 0.3;
-    z-index: 0;
 }
